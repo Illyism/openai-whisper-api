@@ -1,3 +1,7 @@
+<div style="text-align:center;">
+<img src="https://magicbuddy.chat/img/whisper.jpg">
+</div>
+
 # OpenAI Whisper Docker
 
 This is is a Node.js OpenAI microservice using Node.js / Bun.sh with Docker.
