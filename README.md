@@ -22,6 +22,7 @@ You can now navigate to http://localhost:3000 or the PORT provided, see the Usag
 ## Google Cloud Run Deployment
 
 Install bun.sh first, clone this directory and run these commands:
+Change the project ID to your own.
 
 ```bash
 docker build --platform linux/amd64 -t gcr.io/magicbuddy-chat/whisper-docker .
