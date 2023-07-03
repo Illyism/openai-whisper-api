@@ -22,6 +22,9 @@ bun run dev
 
 You can now navigate to http://localhost:3000 or the PORT provided, see the Usage section below.
 
+## Docker
+
+- See: https://hub.docker.com/r/illyism/openai-whisper-api
 
 ## Google Cloud Run Deployment
 
