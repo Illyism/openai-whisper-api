@@ -1,5 +1,5 @@
 {
-  "name": "whisper-docker",
+  "name": "openai-whisper-api",
   "main": "src/server/server.ts",
   "devDependencies": {
     "bun-types": "^0.6.12"
