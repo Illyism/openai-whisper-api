@@ -89,6 +89,6 @@ gcloud run deploy whisper-docker \
 
 We are using this Whisper API with [MagicBuddy, a Telegram ChatGPT bot](https://magicbuddy.chat/).
 
-You can use the [OpenAI Whisper Docker](https://magicbuddy.chat/openai-whisper-docker) as a live example here:
+You can use the [OpenAI Whisper Docker](https://magicbuddy.chat/openai-whisper) as a live example here:
 
-- https://magicbuddy.chat/openai-whisper-docker
+- https://magicbuddy.chat/openai-whisper
