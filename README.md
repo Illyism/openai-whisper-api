@@ -2,18 +2,15 @@
 <img src="https://magicbuddy.chat/img/whisper.jpg">
 </div>
 
-# OpenAI Whisper Docker
+# OpenAI Whisper API
 
-This is is a Node.js OpenAI microservice using Node.js / Bun.sh with Docker.
-With zero dependencies.
+This is is a OpenAI Whisper API microservice using Node.js / Bun.sh / Typescript that can run on Docker. With zero dependencies.
 
-It listens to /transcribe and returns the transcription.
-
-It includes a Docker image for the OpenAI Whisper AI.
+It listens to the `/transcribe` route for MP3 files and returns the text transcription.
 
 ## Running locally
 
-Install bun.sh first, clone this directory and run these commands:
+Install [bun.sh](https://bun.sh/) first, clone this directory and run these commands:
 
 ```bash
 bun install
@@ -28,7 +25,7 @@ You can now navigate to http://localhost:3000 or the PORT provided, see the Usag
 
 ## Google Cloud Run Deployment
 
-Install bun.sh first, clone this directory and run these commands:
+Install [bun.sh](https://bun.sh/) first, clone this directory and run these commands:
 Change the project ID to your own.
 
 ```bash
