@@ -54,15 +54,35 @@ Connect to the /transcribe and send a POST request with the following body:
 }
 ```
 
+### API Key
+
 You need to pass the OpenAI API Key as a HEADER:
 
 ```
-Authorization: Bearer OPENAI_API_KEY
+Authorization: Bearer OPENAI_KEY
 ```
 
-But you can change the file in src/controllers/transcribe.js to use process.env instead.
+Or you can launch the docker image or server with `OPENAI_KEY` in the env:
+  
+```bash
+OPENAI_KEY=YOUR_KEY_HERE bun run dev
 
-## Live example
+# or
+
+docker run -p 3000:3000 -e OPENAI_KEY=YOUR_KEY_HERE gcr.io/magicbuddy-chat/whisper-docker
+
+# or set it as env in Cloud Run with the below command or in the Cloud Console UI
+
+gcloud run deploy whisper-docker \
+  --image gcr.io/magicbuddy-chat/whisper-docker  \
+  --platform managed \
+  --region us-central1 \
+  --allow-unauthenticated \
+  --project magicbuddy-chat \
+  --set-env-vars OPENAI_KEY=YOUR_KEY_HERE
+```
+
+# Live example
 
 We are using this Whisper API with [MagicBuddy, a Telegram ChatGPT bot](https://magicbuddy.chat/).
 

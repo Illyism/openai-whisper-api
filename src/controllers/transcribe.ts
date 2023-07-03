@@ -33,12 +33,21 @@ async function speechToText(base64Audio: string, apiKey: string) {
   return body.text
 }
 
-export default async function (req: Req) {
-  // get API Key from Authorization header
+function getApiKey(req: Req) {
+  if (process.env.OPENAI_KEY) {
+    return process.env.OPENAI_KEY
+  }
+
   const authHeader = req.headers.get('Authorization')
   if (!authHeader) throw new Error('Missing API key')
   const apiKey = authHeader.split(' ')[1]
   if (!apiKey) throw new Error('Wrong API key')
+  return apiKey
+}
+
+export default async function (req: Req) {
+  // get API Key from Authorization header
+  const apiKey = getApiKey(req)
 
   // parse body
   if (!req.request.body) throw new Error('Missing body')
