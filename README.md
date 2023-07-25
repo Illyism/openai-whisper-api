@@ -4,8 +4,19 @@
 
 # OpenAI Whisper API
 
-This is is a OpenAI Whisper API microservice using Node.js / Bun.sh / Typescript that can run on Docker. With zero dependencies.
+**An Open Source Solution for Speech-to-Text and More**
 
+Welcome to the OpenAI Whisper API, an open-source microservice that leverages the power of OpenAI's Whisper, a state-of-the-art automatic speech recognition (ASR) system. This service, built with Node.js, Bun.sh, and Typescript, is designed to run on Docker with zero dependencies, making it a versatile tool for developers across various speech and language-related applications.
+
+The Whisper API is a single model trained on a vast amount of multilingual and multitask training data, including a wide range of audio files and audio recordings. It's a large language model that can handle tasks such as language identification, speech translation, and of course, transforming spoken word into written text. It's the first step in harnessing the power of OpenAI's Whisper for your own applications.
+
+The model is capable of handling a sequence of tokens and can work with natural language, making it a powerful tool for machine learning applications. It's designed to handle multilingual speech recognition, and it can even manage background noise, making it useful for transcribing video calls or YouTube videos.
+
+The API is simple and is designed to be easy to use for developers of all skill levels. It's an open-source project, and it's licensed under the MIT license, meaning you can use it in your own projects with few restrictions. Whether you're looking to transcribe voice messages, improve system performance through a series of system-wide optimizations, or explore the capabilities of the OpenAI Whisper API, this is the place to start. Dive into the following sections to learn more about how to use this powerful tool.
+
+## Usage
+
+This is is a OpenAI Whisper API microservice using Node.js / Bun.sh / Typescript that can run on Docker. With zero dependencies.
 It listens to the `/transcribe` route for MP3 files and returns the text transcription.
 
 ## Running locally
