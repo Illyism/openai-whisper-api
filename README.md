@@ -6,13 +6,13 @@
 
 **An Open Source Solution for Speech-to-Text and More**
 
-Welcome to the OpenAI Whisper API, an open-source microservice that leverages the power of OpenAI's Whisper, a state-of-the-art automatic speech recognition (ASR) system. This service, built with Node.js, Bun.sh, and Typescript, is designed to run on Docker with zero dependencies, making it a versatile tool for developers across various speech and language-related applications.
+Welcome to the OpenAI Whisper API, an open-source AI model microservice that leverages the power of OpenAI's whisper api, a state-of-the-art automatic speech recognition (ASR) system as a large language model. This service, built with Node.js, Bun.sh, and Typescript, is designed to run on Docker with zero dependencies, making it a versatile tool for developers across various speech and language-related applications.
 
-The Whisper API is a single model trained on a vast amount of multilingual and multitask training data, including a wide range of audio files and audio recordings. It's a large language model that can handle tasks such as language identification, speech translation, and of course, transforming spoken word into written text. It's the first step in harnessing the power of OpenAI's Whisper for your own applications.
+The Whisper API is a speech-to-text model trained on a vast amount of multilingual and multitask training data, including a wide range of audio files and audio recordings. It's a single model that can handle tasks such as language identification, speech translation, and of course, transforming spoken word into written text.
 
-The model is capable of handling a sequence of tokens and can work with natural language, making it a powerful tool for machine learning applications. It's designed to handle multilingual speech recognition, and it can even manage background noise, making it useful for transcribing video calls or YouTube videos.
+The model is capable of handling a sequence of tokens and can work with natural language, making it a powerful tool for machine learning applications. It's designed to handle multilingual speech recognition, and it can even manage background noise, making it useful for transcribing a video call, zoom calls, a YouTube video or non-chat use cases in English language and more with full control.
 
-The API is simple and is designed to be easy to use for developers of all skill levels. It's an open-source project, and it's licensed under the MIT license, meaning you can use it in your own projects with few restrictions. Whether you're looking to transcribe voice messages, improve system performance through a series of system-wide optimizations, or explore the capabilities of the OpenAI Whisper API, this is the place to start. Dive into the following sections to learn more about how to use this powerful tool.
+The API is simple and is designed to be easy to use for developers of all skill levels with simple developer access. It's an open-source project, and it's licensed under the MIT license, meaning you can use it in your own projects with few restrictions. Whether you're looking to transcribe voice messages, improve system performance through a series of system-wide optimizations, or explore the capabilities of the OpenAI Whisper API, this is the place to start. Dive into the following code to learn more about how to use this powerful tool as a first step and get your OpenAI Account with a new api key.
 
 ## Usage
 
