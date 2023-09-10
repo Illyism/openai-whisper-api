@@ -36,19 +36,19 @@ You can now navigate to http://localhost:3000 or the PORT provided, see the Usag
 
 ## Google Cloud Run Deployment
 
-Install [bun.sh](https://bun.sh/) first, clone this directory and run these commands:
-Change the project ID to your own.
+Clone this directory and run these commands:
+
+(Replace `PROJECT_ID` with your own Google Cloud project ID)
 
 ```bash
-docker build --platform linux/amd64 -t gcr.io/magicbuddy-chat/whisper-docker .
-docker push gcr.io/magicbuddy-chat/whisper-docker
+docker build --platform linux/amd64 -t gcr.io/PROJECT_ID/whisper-docker .
+docker push gcr.io/PROJECT_ID/whisper-docker
 
 gcloud run deploy whisper-docker \
-  --image gcr.io/magicbuddy-chat/whisper-docker  \
-  --platform managed \
+  --image gcr.io/PROJECT_ID/whisper-docker  \
   --region us-central1 \
   --allow-unauthenticated \
-  --project magicbuddy-chat
+  --project PROJECT_ID
 ```
 
 You should receive a Service URL, see the Usage section below.
@@ -85,12 +85,11 @@ docker run -p 3000:3000 -e OPENAI_KEY=YOUR_KEY_HERE gcr.io/magicbuddy-chat/whisp
 # or set it as env in Cloud Run with the below command or in the Cloud Console UI
 
 gcloud run deploy whisper-docker \
-  --image gcr.io/magicbuddy-chat/whisper-docker  \
-  --platform managed \
+  --image gcr.io/PROJECT_ID/whisper-docker  \
+  --set-env-vars OPENAI_KEY=YOUR_KEY_HERE \
   --region us-central1 \
   --allow-unauthenticated \
-  --project magicbuddy-chat \
-  --set-env-vars OPENAI_KEY=YOUR_KEY_HERE
+  --project PROJECT_ID
 ```
 
 # Live example
